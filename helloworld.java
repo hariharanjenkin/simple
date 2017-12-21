@@ -1,7 +1,7 @@
 class Programming {
   //constructor method
   Programming() {
-    System.out.println("Constructor method called.");	System.out.println("Constructor method called again to test.");
+    System.out.println("Constructor method called.");	System.out.println("Constructor method called twice");
   }
 }public class helloworld{
   public static void main(String[] args) {
