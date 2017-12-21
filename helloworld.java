@@ -1,7 +1,7 @@
 class Programming {
   //constructor method
   Programming() {
-    System.out.println("Constructor method called.");	System.out.println("Constructor method it is");
+    System.out.println("Constructor method called.");
   }
 }public class helloworld{
   public static void main(String[] args) {
