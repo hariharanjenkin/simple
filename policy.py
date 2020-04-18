@@ -1,9 +1,14 @@
 import boto3
+import sys
 from datetime import date, datetime, timedelta,timezone
 from datetime import date
 import csv
 
-client = boto3.client('iam')
+region = sys.argv[1]
+accesskey = sys.argv[2]
+secretkey = sys.argv[3]
+
+client = boto3.client('iam', region_name=region, aws_access_key_id=accesskey, aws_secret_access_key=secretkey)
 
 def accesskey_10days_data(writer):
 
