@@ -26,7 +26,7 @@ def accesskey_fun(writer):
 def main():
 	fieldnames = ["USERNAME","CURRENT_ACCESSKEY","CREATED_DATE"]
 	file_name = "access_key_dict.csv"
-	with open (file_name,"w",newline='') as csv_file:
+	with open (file_name,"w") as csv_file:
 		writer = csv.DictWriter(csv_file,fieldnames=fieldnames)
 		writer.writeheader()
 		accesskey_fun(writer)
