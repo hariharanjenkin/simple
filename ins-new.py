@@ -11,4 +11,4 @@ client = boto3.client('ec2',region_name=region, aws_access_key_id=accesskey,aws_
 data1 = client.describe_instances()
 for data2 in data1["Reservations"]:
 	for data13 in data2["Instances"]:
-		print(data13["InstanceId"])
+		print(data13)
