@@ -16,7 +16,7 @@ def accesskey_fun(writer):
 		for accessky_details in list_acckey['AccessKeyMetadata']:
 			current_date = datetime.now(timezone.utc)
 			age = (current_date-accessky_details['CreateDate']).days
-			if age >= 0:
+			if age >= 20:
 				access_key_dict["USERNAME"] = accessky_details['UserName']
 				access_key_dict["CURRENT_ACCESSKEY"] = accessky_details['AccessKeyId']
 				access_key_dict["CREATED_DATE"] = accessky_details['CreateDate']
