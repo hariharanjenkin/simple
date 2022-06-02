@@ -11,5 +11,5 @@ variable "sub01_cidr" {
 }
 
 variable "sub02_cidr" {
-	
+	default = "10.1.2.0/24"
 }
