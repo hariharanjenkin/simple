@@ -1,7 +1,6 @@
 import boto3
 
-client = boto3.client('ec2',
-		region_name = 'us-east-1')
+client = boto3.client('ec2',region_name = 'us-east-1')
 		
 myec2 = client.describe_instances()
 for printins in myec2['Reservations']:
@@ -12,7 +11,5 @@ for printins in myec2['Reservations']:
 			print(printout['LaunchTime'])
 			print(printout['State']['Name'])
 			print(printname['Value'])
-		
-
 
 print(myec2['Reservations'])
